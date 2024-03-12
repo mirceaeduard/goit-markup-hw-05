@@ -26,10 +26,10 @@
 			<!-- navbarul cu cele trei link-uri -->
 				<ul class="meniu flex-container-meniu">
 					<li>
-						<a class="link meniu-link" href="./index.html">Studio</a>
+						<a class="link meniu-link current-page" href="./index.html">Studio</a>
 					</li>
 					<li>
-						<a class="link meniu-link" href="./portofolio.html">Potofolio</a>
+						<a class="link meniu-link" href="./portofolio.html">Portofolio</a>
 					</li>
 					<li>
 						<a class="link meniu-link" href="./contacts.html">Contacts</a>
@@ -49,7 +49,14 @@
 			<div class="section studio-section1">
 				<!-- Motto-ul și butonul pentru comenzi -->
 				<h1>Effective Solutions for Your Business</h1>
-			<button type="button">Order Service</button>
+			<button data-modal-open type="button">Order Service</button>
+			</div>
+			<!-- Modal-->
+			<div class="modal is-hidden" data-modal>
+				<div class="modal-content">
+					<button class="close-btn" data-modal-close="">×</button>
+						Continut modal
+				</div>
 			</div>
 			
 	   </section>
@@ -338,4 +345,5 @@
 		</div>
     </footer>
 	</div>
+	<script src="./js/modal.js"></script>
   </body>
